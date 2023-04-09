@@ -12,6 +12,10 @@ class QuotsSpider(scrapy.Spider):
     start_urls = ['https://quotes.toscrape.com/']
 
     def parse(self, response):
-        qoute = response.css('.quote::text')
+        qoute = response.xpath('*//div[@class="qoute"]')
         for q in qoute:
-            print(q, end=', ')
+            yield{
+                'title' : q.xpath('.//span[@class = "text"]/text()').get(),
+                'author' : q.xpath('.//small[@class = "author"]/text()').get(),
+                'tags' : q.xpath('.//div[@class = "tags"]/a[@class = "tag"]/text()').getall()   
+            }
