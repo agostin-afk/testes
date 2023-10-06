@@ -30,6 +30,5 @@ Sub Enviar_dados()
     Sheets("exercícios").Range("D21:D34").Value = Null
     Sheets("exercícios").Range("H21:H34").Value = Null
     Sheets("exercícios").Range("L21:L34").Value = Null
-    Sheets("exercícios").Range("P21:P34").Value = Null
-    
+    Sheets("exercícios").Range("P21:P34").Value = Null   
 End Sub
