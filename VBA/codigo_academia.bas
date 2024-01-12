@@ -1,5 +1,9 @@
 '   Esse codigo serve para enviar dados de uma serie de colunas para uma planilha 'dados' e com isso organizar para posteriormente plotar graficos com os valores, um de cada celula
 
+Function exercicios() As Range
+    
+End Function
+
 Sub Enviar_dados()
 '
 ' Enviar_dados Macro
@@ -30,5 +34,5 @@ Sub Enviar_dados()
     Sheets("exercícios").Range("D21:D34").Value = Null
     Sheets("exercícios").Range("H21:H34").Value = Null
     Sheets("exercícios").Range("L21:L34").Value = Null
-    Sheets("exercícios").Range("P21:P34").Value = Null   
+    Sheets("exercícios").Range("P21:P34").Value = Null
 End Sub
