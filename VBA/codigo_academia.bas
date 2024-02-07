@@ -1,5 +1,3 @@
-'   Esse codigo serve para enviar dados de uma serie de colunas para uma planilha 'dados' e com isso organizar para posteriormente plotar graficos com os valores, um de cada celula
-
 Function exercicios(nome As String) As Collection
     Dim grupo_cels As Range
     Dim tonalidade_cels As Range
@@ -82,7 +80,6 @@ ErrorHandler:
     MsgBox "Ocorreu um erro: " & Err.Description, vbCritical
     Resume Next
 End Sub
-' Sub-rotina para aplicar formatação a células não vazias em um intervalo específico
 Sub AplicarFormatacaoEmCelsNaoVazias(nomeGrupo As String)
     Dim cel As Range
     Dim resultado As Collection
